@@ -11,119 +11,122 @@
 #include <vector>
 #include "Point.hpp"
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 class KDTree {
- public:
-  typedef std::pair<Point<N>, ElemType> value_type;
+public:
+    typedef std::pair<Point<N>, ElemType> value_type;
 
-  KDTree();
+    KDTree();
 
-  ~KDTree();
+    ~KDTree();
 
-  KDTree(const KDTree &rhs);
-  KDTree &operator=(const KDTree &rhs);
+    KDTree(const KDTree &rhs);
 
-  size_t dimension() const;
+    KDTree &operator=(const KDTree &rhs);
 
-  size_t size() const;
-  bool empty() const;
+    size_t dimension() const;
 
-  bool contains(const Point<N> &pt) const;
+    size_t size() const;
 
-  void insert(const Point<N> &pt, const ElemType &value);
+    bool empty() const;
 
-  ElemType &operator[](const Point<N> &pt);
+    bool contains(const Point<N> &pt) const;
 
-  ElemType &at(const Point<N> &pt);
-  const ElemType &at(const Point<N> &pt) const;
+    void insert(const Point<N> &pt, const ElemType &value);
 
-  ElemType knn_value(const Point<N> &key, size_t k) const;
+    ElemType &operator[](const Point<N> &pt);
 
-  std::vector<ElemType> knn_query(const Point<N> &key, size_t k) const;
+    ElemType &at(const Point<N> &pt);
 
- private:
-  size_t dimension_;
-  size_t size_;
+    const ElemType &at(const Point<N> &pt) const;
+
+    ElemType knn_value(const Point<N> &key, size_t k) const;
+
+    std::vector<ElemType> knn_query(const Point<N> &key, size_t k) const;
+
+private:
+    size_t dimension_;
+    size_t size_;
 };
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 KDTree<N, ElemType>::KDTree() {
-  // TODO(me): Fill this in.
+    // TODO(me): Fill this in.
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 KDTree<N, ElemType>::~KDTree() {
-  // TODO(me): Fill this in.
+    // TODO(me): Fill this in.
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 KDTree<N, ElemType>::KDTree(const KDTree &rhs) {
-  // TODO(me): Fill this in.
+    // TODO(me): Fill this in.
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 KDTree<N, ElemType> &KDTree<N, ElemType>::operator=(const KDTree &rhs) {
-  // TODO(me): Fill this in.
-  return *this;
+    // TODO(me): Fill this in.
+    return *this;
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 size_t KDTree<N, ElemType>::dimension() const {
-  // TODO(me): Fill this in.
-  return 0;
+    // TODO(me): Fill this in.
+    return 0;
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 size_t KDTree<N, ElemType>::size() const {
-  // TODO(me): Fill this in.
-  return 0;
+    // TODO(me): Fill this in.
+    return 0;
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 bool KDTree<N, ElemType>::empty() const {
-  // TODO(me): Fill this in.
-  return true;
+    // TODO(me): Fill this in.
+    return true;
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 bool KDTree<N, ElemType>::contains(const Point<N> &pt) const {
-  // TODO(me): Fill this in.
-  return true;
+    // TODO(me): Fill this in.
+    return true;
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 void KDTree<N, ElemType>::insert(const Point<N> &pt, const ElemType &value) {
-  // TODO(me): Fill this in.
+    // TODO(me): Fill this in.
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 ElemType &KDTree<N, ElemType>::operator[](const Point<N> &pt) {
-  // TODO(me): Fill this in.
+    // TODO(me): Fill this in.
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 ElemType &KDTree<N, ElemType>::at(const Point<N> &pt) {
-  // TODO(me): Fill this in.
+    // TODO(me): Fill this in.
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 const ElemType &KDTree<N, ElemType>::at(const Point<N> &pt) const {
-  // TODO(me): Fill this in.
+    // TODO(me): Fill this in.
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 ElemType KDTree<N, ElemType>::knn_value(const Point<N> &key, size_t k) const {
-  // TODO(me): Fill this in.
-  ElemType new_element;
-  return new_element;
+    // TODO(me): Fill this in.
+    ElemType new_element;
+    return new_element;
 }
 
-template <size_t N, typename ElemType>
+template<size_t N, typename ElemType>
 std::vector<ElemType> KDTree<N, ElemType>::knn_query(const Point<N> &key,
                                                      size_t k) const {
-  // TODO(me): Fill this in.
-  std::vector<ElemType> values;
-  return values;
+    // TODO(me): Fill this in.
+    std::vector<ElemType> values;
+    return values;
 }
 
 // TODO(me): finish the implementation of the rest of the KDTree class
